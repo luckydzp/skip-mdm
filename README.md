@@ -8,6 +8,7 @@ skip mac mdm note
 4.	激活后，关闭MDM弹窗提示“”“”“”“”“重要重要重要，否则弹窗烦死人”“”“”“”“”“”“”
 	4.1	关闭SIP：关机状态长按启动键，进入恢复模式，执行命令 crsutil disable   重启电脑（reboot命令）
 	4.2	删除并创建假profile文件：
+  	
 		sudo rm /var/db/ConfigurationProfiles/Settings/.cloudConfigHasActivationRecord
 		sudo rm /var/db/ConfigurationProfiles/Settings/.cloudConfigRecordFound
 		sudo touch /var/db/ConfigurationProfiles/Settings/.cloudConfigProfileInstalled
