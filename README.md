@@ -17,6 +17,7 @@ skip mac mdm note
 
 	4.4	执行 sudo launchctl disable system/com.apple.ManagedClient.enroll  该命令可防止重启后系统自动恢复以上删除的profile（重要）
 	4.5	以防万一，可将以下域名屏蔽，使apple不能恢复mdm profile。将以下指向添加到 /etc/hosts中
+  	
 		#block mdm connect
 		0.0.0.0 iprofiles.apple.com
 		0.0.0.0 mdmenrollment.apple.com
@@ -25,7 +26,7 @@ skip mac mdm note
 		0.0.0.0 acmdm.apple.com
 		0.0.0.0 albert.apple.com
 
-5.	做完以上操作，不再会弹出监管注册弹框，为确保系统使用安全，建议恢复SIP：关机状态长按启动键，进入恢复模式，执行命令 crsutil enable   重启电脑。
+6.	做完以上操作，不再会弹出监管注册弹框，为确保系统使用安全，建议恢复SIP：关机状态长按启动键，进入恢复模式，执行命令 crsutil enable   重启电脑。
 
 
 		
