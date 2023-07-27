@@ -6,7 +6,7 @@ skip mac mdm note
 2.	若不小心联网，则需求恢复系统（从苹果服务器下载系统，下载完重启时断开路由器网线）
 3.	若已升级到高版本系统，抹掉硬盘，此时苹果服务器恢复系统已不是12系统，需用硬盘/u盘安装12系统（网上有很多硬盘安装macos的资料），再使用上述1的方法绕过激
 4.	激活后，关闭MDM弹窗提示“”“”“”“”“重要重要重要，否则弹窗烦死人”“”“”“”“”“”“”
-	4.1	关闭SIP：关机状态长按启动键，进入恢复模式，执行命令 crsutil disable   重启电脑（reboot命令）
+	4.1	关闭SIP：关机状态长按启动键，进入恢复模式，执行命令 csrutil disable   重启电脑（reboot命令）
 	4.2	删除并创建假profile文件：
   	
 		sudo rm /var/db/ConfigurationProfiles/Settings/.cloudConfigHasActivationRecord
